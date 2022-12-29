@@ -1,14 +1,24 @@
-package com.example.kotlintask2
+package com.example.kotlintask2.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kotlintask2.ui.main.MainFragment
+import com.example.kotlintask2.R
+import com.example.kotlintask2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val rootView = binding.root
+
+        setContentView(rootView)
+
+
+        binding.container
+
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
