@@ -1,4 +1,4 @@
-package com.example.kotlintask2.view
+package com.example.kotlintask2.view.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         val rootView = binding.root
 
         setContentView(rootView)
-
 
         binding.container
 
